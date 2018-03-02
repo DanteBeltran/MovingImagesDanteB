@@ -37,11 +37,11 @@ rocketship.y = display.contentHeight/8
 -- Description: This function adds the scroll speed to the x-value of the ship
 local function MoveShip(event)
 	-- add the scroll speed to the x-value of the ship
-	beetleship.x = beetleship.x + scrollSpeed * 2
+	beetleship.x = beetleship.x + scrollSpeed * 4
 	-- change the transparency of the ship every time it moves so that it fades out
 	beetleship.alpha = beetleship.alpha + 0.01
 	-- add the scroll speed to the x-value of the ship
-	octopus.x = octopus.x + scrollSpeed
+	octopus.x = octopus.x + scrollSpeed * 2
 	-- change the transparency of the ship every time it moves so that it fades out
 	octopus.alpha = octopus.alpha + 0.01
 	octopus.rotation = octopus.x * 2
