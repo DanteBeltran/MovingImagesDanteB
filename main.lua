@@ -8,7 +8,7 @@
 -- hide the status bar
 display.setStatusBar(display.HiddenStatusBar)
 
---s
+-- set scroll speed
 scrollSpeed = 3
 
 -- backround image with widht and height
@@ -18,6 +18,12 @@ local backroundImage = display.newImageRect("Images/background.png", 2048, 1536)
 local beetleship = display.newImageRect("Images/beetleship.png", 200, 200)
 local octopus = display.newImageRect("Images/octopus.png", 200, 200)
 local rocketship = display.newImageRect("Images/rocketship.png", 200, 200)
+
+-- load sounds
+local backgroundMusic = audio.loadSound("Sounds/Background Music.mp3")
+
+--play sounds
+audio.play(backgroundMusic)
 
 -- set the image to be transparent
 beetleship.alpha = 0
